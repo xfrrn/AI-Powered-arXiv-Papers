@@ -38,8 +38,8 @@
 ### 1. 克隆项目
 
 ```bash
-git clone <your-repository-url>
-cd arxiv_fastapi_project
+git clone https://github.com/xfrrn/AI-Powered-arXiv-Papers.git
+cd AI-Powered-arXiv-Papers
 ```
 
 ### 2. 安装依赖
