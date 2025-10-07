@@ -31,7 +31,7 @@ async def fetch_papers_api(
     end_date: Optional[str] = Query(None, description="结束日期 (格式: YYYY-MM-DD)，不指定则使用当前日期"),
     categories: Optional[str] = Query(None, description="arXiv 分类列表，用逗号分隔。不指定则使用默认分类"),
     max_results: int = Query(MAX_PAPERS, description="最大返回论文数量 (1-1000)", ge=1, le=1000),
-    similarity_threshold: float = Query(0.7, description="语义相似度阈值 (0.0-1.0)，仅在提供关键词时有效", ge=0.0, le=1.0),
+    similarity_threshold: float = Query(0.75, description="语义相似度阈值 (0.0-1.0)，仅在提供关键词时有效", ge=0.0, le=1.0),
     summarize: bool = Query(True, description="是否调用 AI 对论文进行总结")
 ):
     try:

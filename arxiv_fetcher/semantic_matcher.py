@@ -389,7 +389,7 @@ class SpecterMatcher:
     
     def __init__(self, 
                  model_name: str = 'allenai/specter2_base',
-                 similarity_threshold: float = 0.7,
+                 similarity_threshold: float = 0.75,
                  device: Optional[str] = None):
         """
         初始化 SPECTER 语义匹配器
@@ -630,7 +630,7 @@ class SpecterMatcher:
 # SPECTER 相关的便利函数
 def create_specter_matcher(
     model_name: str = 'allenai/specter2_base',
-    similarity_threshold: float = 0.7,
+    similarity_threshold: float = 0.75,
     device: Optional[str] = None
 ) -> Optional[SpecterMatcher]:
     """
@@ -671,7 +671,7 @@ def specter_filter_papers(
     papers: List[Paper],
     query: str,
     model_name: str = 'allenai/specter2_base',
-    similarity_threshold: float = 0.7,
+    similarity_threshold: float = 0.75,
     top_k: Optional[int] = None,
     device: Optional[str] = None
 ) -> List[Paper]:
@@ -713,7 +713,7 @@ def specter_search_with_scores(
     papers: List[Paper],
     query: str,
     model_name: str = 'allenai/specter2_base',
-    similarity_threshold: float = 0.7,
+    similarity_threshold: float = 0.75,
     top_k: Optional[int] = None,
     device: Optional[str] = None
 ) -> List[Tuple[Paper, float]]:
