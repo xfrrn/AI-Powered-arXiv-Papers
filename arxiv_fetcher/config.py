@@ -4,21 +4,23 @@ MAX_PAPERS = 400
 # 默认关键词
 DEFAULT_KEYWORD = "quantum"
 
-# 论文分类关键词示例
-FIELD_CATEGORY_KEYWORDS = {
-    "Quantum Error Correction": [
-        "quantum error correction", "QEC", "surface code", "logical qubits"
-    ],
-    "QEC Decoding": [
-        "decoding", "QEC decoder", "syndrome decoder", "machine learning decoder"
-    ],
-    "QEC Compilation": [
-        "quantum compiler", "logical circuit optimization", "transpilation"
-    ],
-}
+# 默认 arXiv 分类（学科分类）
+DEFAULT_CATEGORIES = ["cs.AI", "cs.CL", "cs.LG"]
 
-# 团队关键词示例
-TEAM_CATEGORY_KEYWORDS = {
-    "Google Quantum AI": ["Oscar Higgott", "Michael Newman", "Rajeev Acharya"],
-    "IBM Quantum": ["Manuel Proissl", "Ivano Tavernelli", "Maika Takita"]
+# 支持的 arXiv 分类选项
+SUPPORTED_CATEGORIES = {
+    "cs.AI": "Artificial Intelligence",
+    "cs.CL": "Computation and Language",
+    "cs.LG": "Machine Learning",
+    "cs.CV": "Computer Vision and Pattern Recognition",
+    "cs.RO": "Robotics",
+    "cs.CR": "Cryptography and Security",
+    "cs.HC": "Human-Computer Interaction",
+    "cs.IT": "Information Theory",
+    "cs.NE": "Neural and Evolutionary Computing",
+    "stat.ML": "Machine Learning (Statistics)",
+    "quant-ph": "Quantum Physics",
+    "physics.optics": "Optics",
+    "math.OC": "Optimization and Control",
+    "econ.EM": "Econometrics"
 }

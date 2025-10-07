@@ -94,6 +94,5 @@ async def summarize_paper(paper: Paper) -> None:
         paper.summary_zh = f"总结失败: {str(e)}"
 
 async def summarize_papers_concurrently(papers: List[Paper]) -> None:
-    # ... (此函数保持不变)
     tasks = [summarize_paper(paper) for paper in papers]
     await asyncio.gather(*tasks)
