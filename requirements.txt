@@ -5,3 +5,8 @@ python-dateutil
 openai
 httpx
 python-dotenv
+transformers
+torch
+sentence-transformers
+scikit-learn
+numpy
